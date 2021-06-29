@@ -1,0 +1,9 @@
+package cleartrip.Testdata;
+
+public class Testdata {
+	
+	//Browser data ///
+	String url="chrome";
+	String browsername="https://www.cleartrip.com/flights";
+
+}

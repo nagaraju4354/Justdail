@@ -98,9 +98,9 @@ public class Bookticketpage {
 		
 		Departdate.click();
 
-		LocalDate xx=java.time.LocalDate.now();
-		String yy=xx.toString();
-		LocalDate date1 = LocalDate.parse(yy);
+		LocalDate xdate=java.time.LocalDate.now();
+		String ydate=xdate.toString();
+		LocalDate date1 = LocalDate.parse(ydate);
 		
 		
 		//add 2 days to Departure date//

@@ -1,0 +1,42 @@
+package cleartrip.Testdata;
+
+public class Testdata {
+	
+	//Browser data ///
+	public String url="chrome";
+	public String browsername="https://www.cleartrip.com/flights";
+	
+	///Book Ticket Data////
+	public String from="Mumbai";
+	public String to="Delhi";
+	public int add_days_depature=2;
+	public int add_days_return=2;
+	public String Adult="2";
+	public String childern="1";
+	
+	//Addons///
+	public String fooditem_name="";
+	public String extra_lougeg="5";
+	
+	//Addcontactdetails//
+	public String mobile_num="9581819798";
+	public String Email="nagaraju.251n@gmail.com";
+	
+	//Traveler details//
+	public String Adult_1_FN="TesAonetFN";
+	public String Adult_1_LN="TesAonetLN";
+	public String Adult_1_GEN="Male";
+	
+	public String Adult_2_FN="TestAtwoFN";
+	public String Adult_2_LN="TestAtwoLN";
+	public String Adult_2_GEN="Female";
+	
+	public String child_1_FN="TestConeFN";
+	public String child_1_LN="TestConeLN";
+	public String child_1_GEN="Male";
+	public String child_1_DOB="29/06/2014";
+	
+	
+	
+
+}

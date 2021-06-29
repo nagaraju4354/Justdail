@@ -1,0 +1,18 @@
+package cleartrip.Testdata;
+
+public class Testdata {
+	
+	//Browser data ///
+	String url="chrome";
+	String browsername="https://www.cleartrip.com/flights";
+	
+	///Book Ticket Data////
+	String from="Mumbai";
+	String to="Delhi";
+	int add_days_depature=2;
+	int add_days_return=2;
+	String Adult="2";
+	String childern="1";
+	
+
+}

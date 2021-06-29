@@ -39,7 +39,7 @@ WebDriver driver;
 		}
 		System.out.println(driver.getCurrentUrl());
 		Actions Act = new Actions(driver);
-		Thread.sleep(8000);
+		Thread.sleep(11000);
 
 		Act.sendKeys(Keys.PAGE_DOWN);
 		Act.perform();

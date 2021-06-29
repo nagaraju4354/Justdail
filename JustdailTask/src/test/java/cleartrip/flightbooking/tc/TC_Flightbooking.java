@@ -3,23 +3,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import cleartrip.Testdata.Testdata;
 import cleartrip.flightbooking.po.Bookticketpage;
 import cleartrip.flightbooking.utl.BrowserSetup;
 
 public class TC_Flightbooking {
 	
-	String Browser="chrome";
-	String Url="https://www.cleartrip.com/flights";
-	
-	
+
 	@Test
 	public WebDriver book_ticket() throws InterruptedException {
-		WebDriver driver=BrowserSetup.getDriver(Browser);
-		driver.get(Url);
+		WebDriver driver=BrowserSetup.getDriver(Testdata.browsername);
+		driver.get(Testdata.url);
 		
 		
 		Bookticketpage booktckt=PageFactory.initElements(driver,Bookticketpage.class);
-		booktckt.Booktickectroundtrip("Mumbai","Delhi",2,2,"2","1");
+		booktckt.Booktickectroundtrip(Testdata.from,Testdata.to,Testdata.add_days_depature,Testdata.add_days_return,Testdata.Adult,Testdata.childern);
 		
 		return driver;
 		
