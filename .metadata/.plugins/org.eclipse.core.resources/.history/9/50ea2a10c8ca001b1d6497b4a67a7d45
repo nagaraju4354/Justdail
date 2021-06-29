@@ -1,0 +1,33 @@
+package Restassured.Restassured;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class test002_Post {
+	
+	@Test
+	void tc_002postt() 
+	{
+		RestAssured.baseURI="http://localhost:8085/student";
+		
+		//Http request
+		RequestSpecification httpresponse=RestAssured.given();
+		
+		//response
+		Response response=httpresponse.request(Method.GET,"/users");
+		
+		//printing body
+		String responsebody=response.getBody().asString();
+		System.out.println(responsebody);
+		
+		int statuscode=response.getStatusCode();
+		System.out.println(statuscode);
+		Assert.assertEquals(statuscode, 200);
+		
+
+}

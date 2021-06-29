@@ -1,0 +1,23 @@
+package cleartrip.flightbooking.tc;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+import cleartrip.flightbooking.utl.BrowserSetup;
+
+public class TC_Flightbooking {
+	
+	String Browser="chrome";
+	String Url="https://www.cleartrip.com/flights";
+	
+	
+	@Test
+	public void book_ticket() {
+		WebDriver driver=BrowserSetup.getDriver(Browser);
+		
+		driver.get(Url);
+		
+		
+		
+	}
+
+}

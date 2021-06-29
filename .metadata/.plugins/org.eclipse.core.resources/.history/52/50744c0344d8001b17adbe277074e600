@@ -1,0 +1,8 @@
+package cleartrip.flightbooking.tc;
+
+public class TC_itinerary extends TC_verifypagloading
+{
+	
+	
+
+}

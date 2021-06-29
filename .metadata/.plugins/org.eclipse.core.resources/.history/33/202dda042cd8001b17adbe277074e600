@@ -1,0 +1,24 @@
+package cleartrip.flightbooking.tc;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import cleartrip.flightbooking.po.Bookticketpage;
+import cleartrip.flightbooking.utl.BrowserSetup;
+
+
+public class TC_verifypagloading 
+	{
+	
+	@Test
+	public void Verify_Pageloading_Clickbookbtn() throws InterruptedException {
+		
+		
+		
+	}
+		
+	
+	
+
+	}

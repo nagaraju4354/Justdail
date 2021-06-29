@@ -1,0 +1,19 @@
+package tests;
+
+
+
+public class BaseClass {
+	
+	@BeforeTest
+	public void setup() 
+	{
+		  
+	}
+	
+	public void teardown() 
+	{
+		  
+	}
+
+
+}

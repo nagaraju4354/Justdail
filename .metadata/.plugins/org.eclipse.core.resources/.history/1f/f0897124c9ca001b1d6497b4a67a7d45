@@ -1,0 +1,52 @@
+package Restassured.Restassured;
+
+import org.json.simple.JSONObject;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class test002_Post {
+	
+	@Test
+	void tc_002postt() 
+	{
+		RestAssured.baseURI="http://localhost:8085";
+		
+		//Http request
+		RequestSpecification httpresponse=RestAssured.given();
+		
+		//Obj
+		
+		JSONObject requestparams=new JSONObject();
+		
+		//Passing parameters/data to objetc
+		
+		requestparams.put("id", "01");
+		requestparams.put("firstName", "Pavan");
+		requestparams.put("lastName", "Kumar");
+		requestparams.put("email", "abcxyz@risusDonecegestas.edu");
+		requestparams.put("programme", "Manger");
+		
+		httpresponse.header("Content-Type","application/json");
+		
+		httpresponse.body(requestparams.toJSONString());
+		
+	
+		//response
+		
+		Response response=httpresponse.request(Method.POST,"/student");
+		
+		//printing body
+		String responsebody=response.getBody().asString();
+		System.out.println(responsebody);
+		
+		int statuscode=response.getStatusCode();
+		System.out.println(statuscode);
+		Assert.assertEquals(statuscode, 201);
+		
+
+}

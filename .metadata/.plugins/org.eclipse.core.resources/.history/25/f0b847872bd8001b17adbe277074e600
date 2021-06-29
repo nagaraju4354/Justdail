@@ -1,0 +1,11 @@
+package cleartrip.flightbooking.tc;
+
+import org.testng.annotations.Test;
+
+@Test
+	public class TC_verifypagloading 
+	{
+	
+	
+
+	}

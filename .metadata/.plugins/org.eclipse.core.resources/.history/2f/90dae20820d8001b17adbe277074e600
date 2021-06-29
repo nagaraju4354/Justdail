@@ -1,0 +1,14 @@
+public class Testdata 
+{
+	
+String url="https://www.cleartrip.com/flights";
+String triptype="";
+String from="Mumbai";
+String to="Delhi";
+int add_days_to_depature=2;
+int add_days_to_return=2;
+String adult="2";
+String childern="1";
+
+
+}
